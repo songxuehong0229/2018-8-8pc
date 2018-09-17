@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 100px;
+}
+/* @media  screen and (min-width: 0px) {
+    #pcClass{
+        display: none;
+    }
+    #phoneClass{
+        display: block;
+    }
+}
+@media  screen and  (min-width: 768px) {
+    #phoneClass{
+        display: none;
+    }
+    #pcClass{
+        display: block;
+    }
+} */
+body{
+    box-sizing: border-box;
+    font-family: "苹方";
+    width: 100%;
+    height: auto;
+}
+/* #pcClass{
+    padding-top: 100px;
+} */
+/* PC端 */
+header{
+    height: 1rem;
+    width: 100%;
+    min-width: 1200px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #fff;
+    z-index: 9;
+    /* font-size: 24px;     */
+}
+.headerFix{
+    /* width: 62.5%; */
+    width: 1200px;
+    min-width: 989px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+.logoLeft{
+    position: absolute;
+    top: 0.39rem;
+    left: 0;
+    display: flex;
+    flex: 1;
+    height: 0.22rem;
+    width: 1.98rem;  
+    justify-content: space-between;
+}
+.logoSpan{
+    font-size: 24px;
+    display: none;
+}
+.logoImgOne{
+    width: 0.88rem;
+    height: 0.22rem;
+}
+.logoImgTwo{
+
+}
+.lineLogo{
+    display: block;
+    width: 1px;
+    height: 0.22rem;
+    background: #81d8cf;
+}
+.logoRight{
+    position: absolute;
+    top: 0.39rem;
+    right: 0;
+    display: flex;
+    flex: 1;
+    height: 0.22rem;
+    width: 6.44rem;  
+    justify-content: space-between;
+    font-size: 18px;
+    font-family: PingFangSC-Medium, sans-serif;
+}
+.logoRight a{
+    color: #010000;
+    /* list-style: none; */
+    text-decoration: none;
+}
+.bannerBox{
+    margin-top: 1rem;
+}
+.banner{
+    width: 100%;
+    height: 5.20rem;
+    min-width: 1200px;
+    position: relative;
+}
+.bannerImg{
+    width: 100%;
+    height: 5.20rem;
+}
+.bannerFontBox{
+    width: 8.76rem;
+    height: 3.34rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -4.38rem;
+    margin-top: -1.67rem;
+    background: rgba(0, 0, 0, 0.3);
+    color:#fff;
+    text-align: center;
+}
+.bannerFont{
+    margin: auto;
+}
+.bannerFont span{
+    display: block;
+}
+.bannerFont .fontOne{
+    font-size: 40px;
+    height: 68px;
+    line-height: 68px;
+    margin-top: 64px;
+    font-family: PingFangSC-Semibold, sans-serif;
+}
+.bannerFont .fontTwo{
+    height: 3px;
+    width: .42rem;
+    background: #fff;
+    margin: 10px auto 5px;
+    /* margin: auto; */
+}
+.bannerFont .fontThree,.fontFour{
+    font-size: 30px;
+    height: 50px;
+    line-height: 50px;
+    font-family: PingFangSC-Regular, sans-serif;
+}
+.bannerFont .fontThree{
+    margin-top: 23px;
+}
+.flagImgBox{
+    height: 1.18rem;
+    width: 1200px;
+    min-width: 989px;
+    margin: auto;
+    position: relative;
+    /* background: red; */
+}
+.flagImgSmallBox{
+    width: 4.44rem;
+    height: 100%;
+    margin: auto;
+    padding-top: 0.3rem;
+    position: relative;
+}
+.flagImgSmallBox .flagImgOne{
+    float: left;
+    cursor: pointer;
+}
+/* 隐现效果 */
+.flagImgOne:hover ~.flagImgOneDiv{
+    display: block;
+    width: 1.8rem;
+    height: 1.8rem;
+    /* background:#81d8cf;  */
+    position: absolute;
+    left: 0;
+    top: 80px;
+    z-index: 5;
+}
+
+.flagImgSmallBox .flagImgTwo{
+    float: right;
+    cursor: pointer;
+}
+.flagImgTwo:hover ~.flagImgTwoDiv{
+    display: block;
+    width: 1.8rem;
+    height: 1.8rem;
+    /* background:#81d8cf;  */
+    position: absolute;
+    right: 0;
+    top: 80px;
+    z-index: 5;
+}
+.abutUs{
+    height: 5.4rem;
+    width: 1200px;
+    min-width: 989px;
+    margin: auto;
+    position: relative;
+    /* background: blue; */
+}
+.abutUsSpan{
+    font-size: 30px;
+    display: block;
+    font-family: PingFangSC-Semibold, sans-serif;
+}
+.abutUsLeft{
+    float: left;
+    margin-top: -5px;
+    
+}
+.abutUsLeft .abutUsLeftFont{
+    width: 5.65rem;
+    height: 0.5rem;
+    /* background: skyblue; */
+    border-bottom: 1px solid #cccccc;
+}
+.abutUsLeftFont .abutUsLeftLine{
+    width: 100%;
+    height: 1px;
+    /* background: #cccccc; */
+    /* background: red; */
+    display: block;
+}
+.abutUsRight{
+    float: right;
+}
+.abutContent{
+    width: 5.65rem;
+    /* width: 100%; */
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: PingFangSC-Regular, sans-serif;
+}
+.abutContent p{
+    margin-bottom: 0.14rem;
+}
+/* 我们的服务 */
+.ourServices{
+    width: 100%;
+    height: 5.57rem;
+    background: #f1f1f1;
+}
+.ourServicesTitle{
+    width: 4.5rem;
+    height: 0.3rem;
+    /* background: skyblue; */
+    font-size: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.ourServicesContent{
+    height: 5.57rem;
+    width: 1200px;
+    min-width: 989px;
+    margin: auto;
+    position: relative;
+    /* background: red; */
+    padding-top: 74px;
+}
+.ourLeft,.ourRight{
+    width: 1.3rem;
+    height: 1px;
+    background: #000000;
+    display: block;
+    margin: auto 0;
+}
+.contentOne{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 83px;
+}
+.one,.two,.three{
+    width: 2.80rem;
+    text-align: center;
+}
+.titleOne{
+    display: block;
+    font-size: 20px;
+}
+.titleTwo{
+    display: block;
+    font-size: 18px;
+    margin-top: 25px;
+}
+.contentTwo{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.followUs{
+    height: 2.82rem;
+}
+.followUsContent{
+    height: 100%;
+    width: 1200px;
+    min-width: 989px;
+    margin: auto;
+    position: relative;
+    /* background: gold; */
+    padding-top: 40px;
+}
+.followUsContentOne{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    width: 759px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* 如何开始 */
+.begin{
+    width: 100%;
+    height:3.4rem;
+    background: #f1f1f1;
+}
+.beginContent{
+    height:100%;
+    width: 1200px;
+    min-width: 989px;
+    margin: auto;
+    position: relative;
+    /* background: #FF00AA; */
+    padding-top: 64px;
+}
+.beginContentOne{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.begOne{
+    width: 1.3rem;
+    text-align: center;
+}
+.oneImg,.twoImg,.threeImg,.fourImg,.fiveImg,.sixImg{
+    position: absolute;
+    top: 44%;
+}
+.oneImg{
+    left: 12%;
+}
+.twoImg{
+    left: 28%;
+}
+.threeImg{
+    left: 40.5%
+}
+.fourImg{
+    left: 55.5%;
+}
+.fiveImg{
+    right: 12%;
+}
+.sixImg{
+    right: 27%;
+}
+footer{
+    font-family: PingFangSC-Medium, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    margin-top: -64px;
+}
+/*  */
+.abutUsSpanOne,.ourServicesOne,.homePageOne{
+    display: none;
+}

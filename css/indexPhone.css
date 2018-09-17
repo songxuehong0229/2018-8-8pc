@@ -1,0 +1,16 @@
+/* M站 */
+.logoRightM{
+    height: 1rem;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #aaaae6;
+    z-index: 9;
+    font-size: 18px;
+}
+.logoRightM a{
+    color: #010000;
+    /* list-style: none; */
+    text-decoration: none;
+}
